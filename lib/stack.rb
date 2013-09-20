@@ -20,5 +20,8 @@ class Stack
     @stack.pop
   end
 
-
+  def top
+    @stack[-1]
+  end
+  
 end

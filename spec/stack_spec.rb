@@ -20,7 +20,7 @@ describe Stack do
 
   context 'size' do 
     it 'should return zero when stack is empty' do 
-      @stack.size == 0
+      @stack.size.should eq 0
     end
 
     it 'return the number of elements in the stack' do 
@@ -51,12 +51,20 @@ describe Stack do
     it 'should pop the last element pushed to the stack and reduce stack size by 1' do 
       @stack.push(1)
       @stack.push(2)
+      @stack.size.should eq 2
       @stack.pop.should eq 2
       @stack.size.should eq 1
     end
   end
 
-
-
-
+  context 'top' do 
+    it 'should return the value of the top element without removing it' do 
+      @stack.push(1)
+      @stack.push(2)
+      @stack.push(3)
+      @stack.size.should eq 3
+      @stack.top.should eq 3
+      @stack.size.should eq 3
+    end
+  end
 end
