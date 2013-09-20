@@ -12,5 +12,10 @@ class Stack
     @stack.size
   end
 
+  def push(element)
+    @stack.push(element)
+  end
+
+
 
 end

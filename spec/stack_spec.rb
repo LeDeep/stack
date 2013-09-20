@@ -29,6 +29,20 @@ describe Stack do
     end
   end
 
+  context 'push' do 
+    it 'pushes elements into the stack' do 
+      @stack.push(1)
+      @stack.size.should eq 1
+    end
+
+    it 'pushes multiple elements into the stack' do
+      @stack.push(1)
+      @stack.push(2)
+      @stack.push(3)
+      @stack.size.should eq 3
+    end
+  end
+
 
 
 
