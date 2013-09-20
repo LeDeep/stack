@@ -8,5 +8,9 @@ class Stack
     @stack.empty?
   end
 
+  def size
+    @stack.size
+  end
+
 
 end

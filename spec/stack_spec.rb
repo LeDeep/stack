@@ -18,6 +18,18 @@ describe Stack do
     end
   end
 
+  context 'size' do 
+    it 'should return zero when stack is empty' do 
+      @stack.size == 0
+    end
+
+    it 'return the number of elements in the stack' do 
+      @stack = [1,2,3,4]
+      @stack.size.should eq 4
+    end
+  end
+
+
 
 
 
