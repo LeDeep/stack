@@ -16,6 +16,9 @@ class Stack
     @stack.push(element)
   end
 
+  def pop
+    @stack.pop
+  end
 
 
 end

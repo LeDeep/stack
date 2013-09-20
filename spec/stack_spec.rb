@@ -43,6 +43,18 @@ describe Stack do
     end
   end
 
+  context 'pop' do 
+    it 'should return nil if the stack is empty' do 
+      @stack.pop.should eq nil
+    end
+
+    it 'should pop the last element pushed to the stack and reduce stack size by 1' do 
+      @stack.push(1)
+      @stack.push(2)
+      @stack.pop.should eq 2
+      @stack.size.should eq 1
+    end
+  end
 
 
 
