@@ -4,5 +4,9 @@ class Stack
     @stack = []
   end
 
+  def empty?
+    @stack.empty?
+  end
+
 
 end

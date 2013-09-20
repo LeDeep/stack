@@ -6,12 +6,19 @@ describe Stack do
 
 
   context '#initialize' do 
-    it 'initializes the stack with an empty array' do 
+    it 'initializes the stack' do 
       @stack.should be_an_instance_of Stack
     end
   end
 
-  
+  context 'empty' do 
+    it 'should start as an empty array' do
+      @stack.should_not be_nil
+      @stack.should be_empty
+    end
+  end
+
+
 
 
 end
